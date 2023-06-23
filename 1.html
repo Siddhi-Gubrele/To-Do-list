@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body id="body">
+
+    <!-- <ul id="list" data="valid">
+        <li class="list-Item">1st</li>
+        <li class="list-Item">2nd</li>
+        <li class="list-Item">3rd</li>
+    </ul>
+
+    <table> 
+        <tr>
+            <th>number</th>
+            <th>num</th>
+        </tr>
+        <tr>
+            <td>one</td>
+            <td>two</td> 
+        </tr>
+    </table> -->
+
+    <button id="btn">click here</button>
+    <script>
+        // console.log(document.documentElement)
+        // console.log(document.body)
+        // console.log(document.head)
+
+        //children
+        // console.log(document.head.childNodes)
+        // console.log(document.body.childNodes)
+        // console.log(document.body.children)       //similar to array but not an array 
+        // for(node of document.body.childNodes){
+        //     console.log(node)
+        // }
+        
+        
+        
+        // console.log(document.body.firstChild)
+        // console.log(document.body.lastChild)
+        // console.log(document.body.firstElementChild)
+        // console.log(document.body.lastElementChild)
+        // const childofbody = Array.from(document.body.children)
+        // console.log(childofbody)
+        // console.log(childofbody[0])
+
+
+        //sibilings
+        // const tag1 = document.body.children[0].children
+        // console.log(tag1)
+        // const tag11 = document.body.children[0].children[0]
+        // console.log(tag11.nextElementSibling.textContent)
+
+
+
+        // table dom manipultion
+        // console.log(document.body.children)
+        // const tabletag = document.body.children[1]
+        // console.log(tabletag)
+        // console.log(tabletag.children) 
+        // console.log(tabletag.tBodies[0].rows )
+        // console.log(tabletag.tBodies[0].rows[1].cells)
+        // console.log(tabletag.tBodies[0].rows[1].cells[1].textContent)
+        // console.log(tabletag.rows)
+        // console.log(tabletag.tBodies[0].rows[0].cells[0].style = "background-color: blue;")
+        
+
+        // ID search
+        // console.log(list)
+        // console.log(list.style.background="red") 
+        // const ultag = document.getElementById("list")
+        // console.log(ultag.style.color = "red")
+
+
+        // Class search
+        // const listItem = document.getElementsByClassName("list-Item")
+        // console.log(listItem)
+        // for(node of listItem){
+        //     node.style.color = "red";
+        // }
+        // console.log(document.getElementsByTagName("ul"))
+        // console.log(document.getElementsByTagName("T able"))
+
+        // Query selector
+        // const listItem = document.querySelector('.list-Item')
+        // const listItem = document.querySelectorAll('.list-Item')      // run time pr change hojate h 
+        // console.log(listItem)
+        // console.log(listItem[2].textContent)
+        // console.log(list.id)
+        // console.log(list.getAttribute('data'))
+
+        //attributes
+        // console.log(list.setAttribute('order-placed', 'pending'))
+        // console.log(list.getAttribute('order-placed'))
+        // console.log(list.hasAttribute('order-placed'))
+        // console.log(list.removeAttribute('order-placed'))
+        // console.log(list.hasAttribute('order-placed'))
+        // console.log(list.attributes)
+
+        // creating, removing and updating elements
+        // const newDiv = document.createElement('div')
+        // console.log(newDiv)
+        // body.append(newDiv)
+        // console.log(newDiv.appendChild(document.createTextNode('new-div')))
+        // console.log(document.body.children)
+        // console.log(document.body.children[3 ].style.color="red")
+        // body.before(newDiv)
+        // newDiv.textContent="me"
+        // console.log(newDiv)
+        // newDiv.remove()
+        //innerHTML 
+
+
+
+        // let ul = document.createElement('ull')
+        // body.append(ul)
+        
+        // while(true){
+        //     let data = prompt("enter list items", "");
+        //     if(!data){
+        //         break;
+        //     }
+        //     let li = document.createElement('lii');
+        //     li.textContent=data;
+
+        //     ul.append(li);
+
+        // }
+
+        // event
+        // function callme(){
+        //     alert('heyy')
+        // }
+
+        // // btn.onclick = callme() ----> calling    
+        // // btn.onclick = callme ------> passing   
+        // btn.addEventListener('click', callme)
+    </script>
+</body>
+</html>   

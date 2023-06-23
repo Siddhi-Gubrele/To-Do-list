@@ -1,0 +1,146 @@
+*{
+    font-family: sans-serif;
+    font-weight: 500;
+    margin: 0;
+
+}
+:root{
+    --dark:#27374D;
+    --darker:#213555;
+    --darkest:#080202;
+    --grey:#526D82;    ;
+    --light:#E3F4F4;
+    --red: #FF3131;
+    --blue:#1F51FF;
+    --lighter:#79E0EE;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--light);
+    color: var(--light);
+}
+header{
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem 1rem;
+}
+header h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--grey);
+}
+#new-task-form{
+    display: flex;
+}
+input, button{
+    background: none;
+    border:none;
+    appearance: none;
+    outline: none;
+}
+#new-task-input{ 
+    flex:1 1%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--darker);
+    margin-right: 1rem;
+    color: var(--light);
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+#new-task-input::placeholder{
+    color: var(--grey);
+}
+#new-task-submit{
+    color: var(--red);
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--red), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#new-task-submit:hover{
+    opacity: 1;
+}
+#new-task-submit:active{
+    opacity: 0.6;
+}
+main{
+    flex:1 1 0%;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+}
+.task-list{
+    padding: 1rem;
+}
+.task-list h2{
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+    font-weight: 300;
+    color: var(--grey);
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.content .text{
+    flex: 1 1 0%;
+}
+
+.content .text{
+    color: var(--lighter);
+    font-size: 1.2rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+    font-weight: 200;
+}
+.text_change{
+    color: var(--lighter);
+    font-size: 1.2rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+    font-weight: 200;
+    text-decoration: line-through;
+}
+
+.content .text:not(:read-only){
+    color: var(--light);
+}
+.actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.actions button{
+    cursor: pointer;
+    margin: 0 0.1rem;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, var(--red), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.actions button:hover{
+    opacity: 1;
+}
+.actions button:active{
+    opacity: 0.6;
+    
+}
+.change{
+    text-decoration: line-through;
+}
+
+
